@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import type { FilterState, CountyData, RegionSummary } from '../types';
+import type { FilterState, CountyData } from '../types';
 import { MOCK_RECORDS, aggregateByCounty, generateRegionSummary } from '../data/mockData';
 
 export function useFilteredData(filters: FilterState) {
