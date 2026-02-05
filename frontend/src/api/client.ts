@@ -39,7 +39,7 @@ export interface GeoJSONResponse {
   type: "FeatureCollection";
   features: {
     type: "Feature";
-    geometry: GeoJSON.Geometry;
+    geometry: { type: string; coordinates: unknown };
     properties: GeoJSONFeatureProperties;
   }[];
 }

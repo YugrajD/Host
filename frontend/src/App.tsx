@@ -14,7 +14,7 @@ function App() {
     breed: 'All Breeds',
   });
 
-  const { countyData, regionSummary, rateRange, loading, error } = useFilteredData(filters);
+  const { countyData, regionSummary, rateRange } = useFilteredData(filters);
 
   const handleCountyClick = (county: string) => {
     setSelectedCounty(selectedCounty === county ? null : county);
